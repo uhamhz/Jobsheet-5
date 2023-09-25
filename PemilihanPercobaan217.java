@@ -18,6 +18,22 @@ public class PemilihanPercobaan217 {
 
         String Message = total < 65 ? "Remidi" : "Tidak Remidi";
 
+        if (total > 80) {
+            System.out.println("Anda Mendapatkan Nilai A Kualifikasi Sangat Baik");
+        } else if (total > 73) {
+            System.out.println("Anda Mendapatkan Nilai B+ Kualifikasi Lebih Dari Baik");
+        } else if (total > 65){
+            System.out.println("Anda Mendapatkan Nilai B Kualifikasi Baik");
+        } else if (total > 60){
+            System.out.println("Anda Mendapatkan Nilai C+ Kualifikasi Lebih Dari Cukup");
+        } else if (total > 50){
+            System.out.println("Anda Mendapatkan Nilai C Kualifikasi Cukup ");
+        } else if (total > 39){
+            System.out.println("Anda Mendapatkan Nilai D Kualifikasi Kurang");
+        } else{
+            System.out.println("Anda Mendapatkan Nilai E Kualifikasi Gagal");
+        }
+
         System.out.println("Nilai Akhir = " + total + " Sehingga " + Message);
     }
 }
